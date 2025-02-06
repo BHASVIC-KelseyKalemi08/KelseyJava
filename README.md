@@ -17,5 +17,15 @@ A static method in Java is a method that is part of a class rather than an insta
 
 ### 5) Using pseudocode, write a class with relevant attributes and methods to represent a digital clock object. It should represent the time as a 24-hour clock, and include methods to create a new object, set the time manually, display the time, and update the time at the end of each minute
 
- Public class digital clock {
+ class digital clock {
+ private hours
+ private mins
+
+ public procedure new(startingHour, startingMin
+  setTime(startinghour, startingMin)
+  endprocedure
+
+  public procedure displayTime(startingHour, startingMin):
+  this.
+ 
 
