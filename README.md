@@ -25,7 +25,45 @@ A static method in Java is a method that is part of a class rather than an insta
   setTime(startinghour, startingMin)
   endprocedure
 
+
+
   public procedure displayTime(startingHour, startingMin):
-  this.
+  
+  this.hours=newHour
+  
+  this.min=newMin
+ 
+  endprocedure
+
+
+ 
+  public procedure displayTime():
+ 
+  system.out.println(hours + ":" + mins)
+ 
+  endprocedure
+
+
+ 
+  public procedure addMin():
+ 
+  mins++
+  
+  if mins ==60:
+  
+  mins=0
+ 
+  hours++
+ 
+  if hours==24:
+ 
+  hours=0
+ 
+  endif
+  
+  endif
+ 
+  endprocedure
+  endclass
  
 
