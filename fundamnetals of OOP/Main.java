@@ -1,6 +1,6 @@
-public class Mainn {
+public class Main {
 	
-	public Mainn() {
+	public Main() {
 		Bank bank = new Bank();
 		boolean loggedIn = false;
 		boolean quitting = false;
@@ -45,6 +45,6 @@ public class Mainn {
     }
     
     public static void main(String[] args) {
-        new Mainn();
+        new Main();
     }
 }

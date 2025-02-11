@@ -21,7 +21,7 @@ public class Account {
         if (password.equals(this.password)) {
             return true;
         }
-            else {
+        else {
             return false;
         }
 
