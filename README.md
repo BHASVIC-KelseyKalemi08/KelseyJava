@@ -65,5 +65,25 @@ A static method in Java is a method that is part of a class rather than an insta
  
   endprocedure
   endclass
- 
 
+
+  ## Encapsulation
+
+### 1) define the term encapsulation:
+     is the idea of grouping data and subroutines to make a program easier to work on and understand
+
+### 2) Explain the difference between a private attribute or method and a public attribute or method
+     if a method private it can only be accessed from within the class and if an attribute or method is public it can be used by other classes
+
+### 3) Explain one reason why an attribute may be made private
+     useful for security purposes becuase people cannot see the things in the attribute  which they don't have access to
+
+### 4) Define the terms accessor and mutator
+     accessors are  Methods that return the value of a private attribute
+     mutators are methods that alter the value of a private attribute
+  
+### 5) Identify when accessors and mutators should be used 
+    to change the functionality of the class. For example if you want tpo change how the clock time is displayed then you would have to format or do other checks in multiple placs=es thoughout the class
+
+### 6) Explain why you might make an attribute public instead of using accessors and mutators
+    Accessors and mutators should not just be used to make a private attribute public but to hide information from other classes or limit the ability of other classes to alter the attribute
