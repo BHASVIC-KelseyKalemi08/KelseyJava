@@ -7,18 +7,32 @@ public class Room {
     private boolean clean;
 
 
-    Room(int number, int size, boolean clean) {
-        this.number = number;
-        this.size = size;
-        this.occupants = new ArrayList<Customer>();
-        this.clean = clean;
+    void addOccupant( Customer occupantIn) {
+        if (occupants.size() < size) {
+            occupants.add(occupantIn);
+            occupantIn.increaseFeedback();
+        }
+        else {
+            occupantIn.decreaseFeedback();
+            return;
+        }
+        if (clean == true)
+            occupantIn.increaseFeedback();
+        else
+            occupantIn.decreaseFeedback();
+        clean = false;
+    }
 
-        ArrayList<Room> rooms = new ArrayList<Room>();
-        rooms.add(new Room(1, 1, false));
-        rooms.add(new Room(2, 2, true));
-        rooms.add(new Room(3, 1, false));
-        Hotel hotel = new Hotel(rooms);
+    void removeOccupant( Customer occupantOut) {
+        int index = -1;
+        for (int i = 0; i < occupants.size(); i++) {
+            if (occupants.get(i).equals(occupantOut))
+                index = i;
+        }
+        if (index != -1)
+            occupants.remove(index);
+    }
 
     }
-}
+
 
