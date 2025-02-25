@@ -13,7 +13,7 @@ public class Main {
 		Customer customer3 = new Customer(2, "Miss. Scarlett");
 		Customer customer4 = new Customer(3, "Mrs. Peacock");
 		Customer customer5 = new Customer(2, "Prof. Plum");
-		Customer customer6 = new Customer(3, "Col. Mustard")  ;  
+		Customer customer6 = new Customer(3, "Col. Mustard")  ;
 		Receptionist receptionist = new Receptionist("Jane");
 		Cleaner cleaner = new Cleaner("Michael");
 		Manager manager = new Manager("Janhavi");
@@ -37,9 +37,9 @@ public class Main {
 		receptionist.checkIn(hotel, customer6);
 		receptionist.checkOut(hotel, customer6, manager);
 		Console.readLine();
-    }
+	}
 
-    public static void main(String[] args) {
-        new Main();
-    }
+	public static void main(String[] args) {
+		new Main();
+	}
 }
