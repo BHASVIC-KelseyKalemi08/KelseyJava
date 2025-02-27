@@ -6,6 +6,12 @@ public class Room {
     private ArrayList<Customer> occupants;
     private boolean clean;
 
+    Room(int number, int size, boolean clean) {
+        this.number = number;
+        this.size = size;
+        this.clean = clean;
+        this.occupants = new ArrayList<Customer>();
+    }
 
     void addOccupant( Customer occupantIn) {
         if (occupants.size() < size) {
@@ -33,6 +39,17 @@ public class Room {
             occupants.remove(index);
     }
 
-    }
+
+
+
+
+    ArrayList<Customer> getOccupants() {return occupants;}
+    int getSize() {return size;}
+    boolean getCleanliness() {return clean;}
+    void setCleanliness(boolean cleanliness){clean = cleanliness;}
+
+    int getNumber() {return number;}
+
+}
 
 

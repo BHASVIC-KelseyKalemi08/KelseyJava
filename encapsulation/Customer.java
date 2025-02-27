@@ -10,7 +10,9 @@ public class Customer {
 
     }
 
-    public int getRoomBooking() {return roomBooking;}
+    public int getRoomBooking() {
+        return roomBooking;
+    }
     public void increaseFeedback() { feedback++;}
     public void decreaseFeedback() { feedback--;}
     public String getName() {return name;}
