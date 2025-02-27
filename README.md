@@ -87,3 +87,31 @@ A static method in Java is a method that is part of a class rather than an insta
 
 ### 6) Explain why you might make an attribute public instead of using accessors and mutators
     Accessors and mutators should not just be used to make a private attribute public but to hide information from other classes or limit the ability of other classes to alter the attribute
+
+
+## Inheritance
+
+### 1) 
+Inheritance: when one class copies the characteristics of another class, but can add  or alter that class's methods/attributes
+
+### 2) 
+           computer
+              |
+  laptop  smartphone  desktop
+               |
+     iphone      android
+
+### 3)a) 
+parent class: Guitar
+child class: electric guitar
+### b)
+strum and hold fret
+
+### 4)
+when a class calls a super method it makes the user override a method and call back the overridden function itself at a certain point
+
+### 5) 
+issue caused by allowing multiple inheritances is there can be issues regarding what characteristics that class should inherit
+
+### 6)
+an abstract methid is  a class that declares methods without specifying how they work, for example: defining a methods name and parameters 
