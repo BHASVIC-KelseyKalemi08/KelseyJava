@@ -5,7 +5,7 @@ public class Gorilla {
     private int legs;
     private int arms;
     private int wings;
-    
+
     Gorilla() {
         this.coldBlooded = false;
         this.skinType = "fur";

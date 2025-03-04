@@ -1,27 +1,26 @@
-public class Tortoise extends Reptile {
-    
-    Tortoise() {
-        super()
+    abstract class Animal {
+    protected boolean  coldBlooded;
+    protected boolean tail;
+    protected String skinType;
+    protected int legs;
+    protected int arms;
+    protected int wings;
+
+    Animal(){
+        this.coldBlooded = coldBlooded;
+        this.skinType = skinType;
+        this.tail = tail;
+        this.legs = legs;
+        this.arms = arms;
+        this.wings = wings;
     }
-    
-    private void move() {
-        System.out.println("This animal walks");
-    }
-    
-    private void eat() {
-        System.out.println("This animal is a herbivore");
-    }
-    
-    private void birth() {
-        System.out.println("This animal lays eggs");
-    }
-    
-    private void hibernate() {
-        System.out.println("This animal hibernates");
-    }
-    
+
+    protected abstract void birth();
+    protected abstract void move();
+    protected abstract void eat();
+
     public void getInfo() {
-        System.out.println("Tortoise:");
+        System.out.println("Animal:");
         if (this.coldBlooded)
             System.out.println("This animal is cold-blooded");
         else
@@ -39,7 +38,8 @@ public class Tortoise extends Reptile {
         this.move();
         this.eat();
         this.birth();
-        this.hibernate();
         System.out.println();
-    }
+
+
+}
 }
