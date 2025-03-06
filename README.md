@@ -115,3 +115,29 @@ issue caused by allowing multiple inheritances is there can be issues regarding 
 
 ### 6)
 an abstract methid is  a class that declares methods without specifying how they work, for example: defining a methods name and parameters 
+
+## Polymorphism 
+
+### 1) Define the term polymorphism, and explain why polymorphism is useful:
+   polymorphism: using multiple methods with different implementations to use the same method name 
+
+   why it is useful: it allows different parts of the program to use a method without needing to know the implementation required improving the encapsulation of the program
+
+### 2)a. State why Object cannot override any of the methods in Number:
+         becuase it has final before its procedure meaning that it can't override as it is not virtual method
+
+###   b. Identify the name of an overridden method, and explain why it is an overridden method:
+        " public procedure type()" becuase the procedure is no longer an object but a number
+
+###   c. Identify the name of an overloaded method, and explain why it is an overloaded method:               
+      "public function add(num1, num2)" and
+      "public function add(num1, num2, num3)" because it defines the class number with two different 
+       constructors 
+
+###   d. Identify the name of an virtual method, and explain why it is an virtual method:
+       "final public procedure display()" because the final infront of it defines the method as non 
+        virtual, not allowing oit to override
+
+### 3) Explain when you would choose to make a method virtual:
+      when you don't want the class that to be overriden by the class that inherits it
+
