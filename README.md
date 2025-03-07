@@ -118,26 +118,56 @@ an abstract methid is  a class that declares methods without specifying how they
 
 ## Polymorphism 
 
-### 1) Define the term polymorphism, and explain why polymorphism is useful:
+### 1) Define the term polymorphism, and explain why polymorphism is useful
    polymorphism: using multiple methods with different implementations to use the same method name 
 
    why it is useful: it allows different parts of the program to use a method without needing to know the implementation required improving the encapsulation of the program
 
-### 2)a. State why Object cannot override any of the methods in Number:
+### 2)a. State why Object cannot override any of the methods in Number
          becuase it has final before its procedure meaning that it can't override as it is not virtual method
 
-###   b. Identify the name of an overridden method, and explain why it is an overridden method:
+###   b. Identify the name of an overridden method, and explain why it is an overridden method
         " public procedure type()" becuase the procedure is no longer an object but a number
 
-###   c. Identify the name of an overloaded method, and explain why it is an overloaded method:               
+###   c. Identify the name of an overloaded method, and explain why it is an overloaded method               
       "public function add(num1, num2)" and
       "public function add(num1, num2, num3)" because it defines the class number with two different 
        constructors 
 
-###   d. Identify the name of an virtual method, and explain why it is an virtual method:
+###   d. Identify the name of an virtual method, and explain why it is an virtual method
        "final public procedure display()" because the final infront of it defines the method as non 
         virtual, not allowing oit to override
 
 ### 3) Explain when you would choose to make a method virtual:
       when you don't want the class that to be overriden by the class that inherits it
+
+
+## Class Relationships
+
+### 1) Explain what UML class diagrams are and why they are used
+
+       Show the relationship between different classes , and they are used to help us 
+       visually picture class relationships
+
+### 2) State the similarity between composition and aggregation
+
+        They are both formed from a collection of different component objects
+
+### 3) Explain the difference between composition and aggregation
+
+       In composition the component object can onbly exist as part of a composite object, while in aggregation, the 
+       component object can exist seperatly from the aggregated object
+
+### 4) a. Explain the relationship between class A and class B
+
+        class B is the child class of class A 
+
+ ###   b. Explain the relationship between class A and class C
+
+       class C is a composition of class A 
+
+ ###   c. Explain the relationship between class B and class D
+
+          class B is an aggregation of class D 
+        
 
